@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  height: 100vh;
+  position: relative;
+}
+
+.bank-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 3vh 3vw;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.balance {
+  font-size: 5vmin;
+  color: green;
+  margin-bottom: 4vh;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 2vh 0;
+  margin-bottom: 2vh;
+  font-size: 4vmin;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.btn.deposit {
+  background-color: #4CAF50;
+}
+
+.btn.withdraw {
+  background-color: #f44336;
+}
