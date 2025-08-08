@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-switch {
+  font-size: 14px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ebe7e7;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style-type: disc; 
+  padding-left: 20px;     
+}
+
+.sidebar li {
+  margin-bottom: 0px;
+}
+
+.sidebar a {
+  text-decoration: underline;
+  color: purple;
+}
+
+.main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+}
+
+.dark-mode {
+  background-color: #040404;
+  color: #f0f0f0;
+}
+
+.dark-mode .header,
+.dark-mode .footer {
+  background-color: rgb(48, 47, 47);
+  color: #fff;
+}
+
+.dark-mode .sidebar {
+  background-color: #484747;
+  border-color: #333;
+}
+
+.dark-mode .sidebar a {
+  color: purple;
+}
+
+.dark-mode .main {
+  background-color: #1e1e1e;
+}
